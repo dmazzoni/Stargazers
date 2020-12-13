@@ -28,14 +28,20 @@ private extension StargazerRow {
     var avatarView: some View {
         Group {
             if let avatarUrl = stargazer.user.avatarUrl {
-                RemoteImage(url: avatarUrl)
+                userImage(url: avatarUrl)
             } else {
                 avatarPlaceholder
             }
         }
     }
     
-    var avatarPlaceholder: some View {
+    func userImage(url: URL) -> some View {
+        
+        RemoteImage(url: url)
+            .placeholder(image: avatarPlaceholder)
+    }
+    
+    var avatarPlaceholder: Image {
         Image(systemName: "person.crop.circle")
     }
 }
