@@ -118,19 +118,19 @@
 		3C4B9424258614AA001653F3 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				3C4B943025861598001653F3 /* GitHub */,
+				3C4B943025861598001653F3 /* GitHubRepository */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		3C4B943025861598001653F3 /* GitHub */ = {
+		3C4B943025861598001653F3 /* GitHubRepository */ = {
 			isa = PBXGroup;
 			children = (
 				3C4B9425258614BC001653F3 /* GitHubRepository.swift */,
 				3C4B94412586170D001653F3 /* GitHubRequest.swift */,
 				3C4B9440258616F0001653F3 /* Requests */,
 			);
-			path = GitHub;
+			path = GitHubRepository;
 			sourceTree = "<group>";
 		};
 		3C4B9440258616F0001653F3 /* Requests */ = {
