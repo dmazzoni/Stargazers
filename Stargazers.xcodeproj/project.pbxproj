@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C4B9414258600E6001653F3 /* InfiniteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B9413258600E6001653F3 /* InfiniteList.swift */; };
+		3C4B941A25861073001653F3 /* StargazerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B941925861073001653F3 /* StargazerRow.swift */; };
+		3CF1F88E2584F48200A1980A /* StargazersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F88D2584F48200A1980A /* StargazersApp.swift */; };
+		3CF1F8902584F48200A1980A /* StargazerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F88F2584F48200A1980A /* StargazerListView.swift */; };
+		3CF1F8922584F48300A1980A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1F8912584F48300A1980A /* Assets.xcassets */; };
+		3CF1F8952584F48300A1980A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1F8942584F48300A1980A /* Preview Assets.xcassets */; };
+		3CF1F8A02584F48300A1980A /* StargazersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F89F2584F48300A1980A /* StargazersTests.swift */; };
+		3CF1F8AB2584F48300A1980A /* StargazersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F8AA2584F48300A1980A /* StargazersUITests.swift */; };
+		3CF1F91A2585029500A1980A /* IconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F9192585029500A1980A /* IconTextField.swift */; };
+		3CF1F9282585071F00A1980A /* StargazerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F9272585071F00A1980A /* StargazerListViewModel.swift */; };
+		3CF1F9312585091000A1980A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F9302585091000A1980A /* User.swift */; };
+		3CF1F94B25850E5F00A1980A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F94825850E5F00A1980A /* ApiClient.swift */; };
+		3CF1F94C25850E5F00A1980A /* URLRequestCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F94925850E5F00A1980A /* URLRequestCompatible.swift */; };
+		3CF1F94D25850E5F00A1980A /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F94A25850E5F00A1980A /* ApiRequest.swift */; };
+		3CF1F9562585110C00A1980A /* ListStargazers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F9552585110C00A1980A /* ListStargazers.swift */; };
+		3CF1F95F258515C100A1980A /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 3CF1F95E258515C100A1980A /* Swinject */; };
+		3CF1F968258515D700A1980A /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F967258515D700A1980A /* Injector.swift */; };
+		3CF1F972258518B300A1980A /* ApiEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F971258518B300A1980A /* ApiEnvironment.swift */; };
+		3CF1F97925851C2E00A1980A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1F97B25851C2E00A1980A /* Localizable.strings */; };
+		3CF1F98825851E9000A1980A /* AlamofireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F98725851E9000A1980A /* AlamofireApiClient.swift */; };
+		3CF1F99125851EDA00A1980A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3CF1F99025851EDA00A1980A /* Alamofire */; };
+		3CF1F99725851FB100A1980A /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F99625851FB100A1980A /* GitHubService.swift */; };
+		3CF1F9A52585271200A1980A /* Stargazer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F9A42585271200A1980A /* Stargazer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CF1F89C2584F48300A1980A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CF1F8822584F48200A1980A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CF1F8892584F48200A1980A;
+			remoteInfo = Stargazers;
+		};
+		3CF1F8A72584F48300A1980A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CF1F8822584F48200A1980A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CF1F8892584F48200A1980A;
+			remoteInfo = Stargazers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C4B9413258600E6001653F3 /* InfiniteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteList.swift; sourceTree = "<group>"; };
+		3C4B941925861073001653F3 /* StargazerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerRow.swift; sourceTree = "<group>"; };
+		3CF1F88A2584F48200A1980A /* Stargazers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargazers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF1F88D2584F48200A1980A /* StargazersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersApp.swift; sourceTree = "<group>"; };
+		3CF1F88F2584F48200A1980A /* StargazerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerListView.swift; sourceTree = "<group>"; };
+		3CF1F8912584F48300A1980A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CF1F8942584F48300A1980A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3CF1F8962584F48300A1980A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF1F89B2584F48300A1980A /* StargazersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF1F89F2584F48300A1980A /* StargazersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersTests.swift; sourceTree = "<group>"; };
+		3CF1F8A12584F48300A1980A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF1F8A62584F48300A1980A /* StargazersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF1F8AA2584F48300A1980A /* StargazersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersUITests.swift; sourceTree = "<group>"; };
+		3CF1F8AC2584F48300A1980A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF1F9192585029500A1980A /* IconTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextField.swift; sourceTree = "<group>"; };
+		3CF1F9272585071F00A1980A /* StargazerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerListViewModel.swift; sourceTree = "<group>"; };
+		3CF1F9302585091000A1980A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3CF1F94825850E5F00A1980A /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		3CF1F94925850E5F00A1980A /* URLRequestCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestCompatible.swift; sourceTree = "<group>"; };
+		3CF1F94A25850E5F00A1980A /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		3CF1F9552585110C00A1980A /* ListStargazers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStargazers.swift; sourceTree = "<group>"; };
+		3CF1F967258515D700A1980A /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		3CF1F971258518B300A1980A /* ApiEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnvironment.swift; sourceTree = "<group>"; };
+		3CF1F97A25851C2E00A1980A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3CF1F97F25851CE900A1980A /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3CF1F98725851E9000A1980A /* AlamofireApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiClient.swift; sourceTree = "<group>"; };
+		3CF1F99625851FB100A1980A /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		3CF1F9A42585271200A1980A /* Stargazer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stargazer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CF1F8872584F48200A1980A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF1F95F258515C100A1980A /* Swinject in Frameworks */,
+				3CF1F99125851EDA00A1980A /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF1F8982584F48300A1980A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF1F8A32584F48300A1980A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C4B94182586105B001653F3 /* Stargazer Row */ = {
+			isa = PBXGroup;
+			children = (
+				3C4B941925861073001653F3 /* StargazerRow.swift */,
+			);
+			path = "Stargazer Row";
+			sourceTree = "<group>";
+		};
+		3CF1F8812584F48200A1980A = {
+			isa = PBXGroup;
+			children = (
+				3CF1F88C2584F48200A1980A /* Stargazers */,
+				3CF1F89E2584F48300A1980A /* StargazersTests */,
+				3CF1F8A92584F48300A1980A /* StargazersUITests */,
+				3CF1F88B2584F48200A1980A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CF1F88B2584F48200A1980A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F88A2584F48200A1980A /* Stargazers.app */,
+				3CF1F89B2584F48300A1980A /* StargazersTests.xctest */,
+				3CF1F8A62584F48300A1980A /* StargazersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CF1F88C2584F48200A1980A /* Stargazers */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F88D2584F48200A1980A /* StargazersApp.swift */,
+				3CF1F963258515C800A1980A /* Injection */,
+				3CF1F92F258508EA00A1980A /* Model */,
+				3CF1F93825850C6500A1980A /* Networking */,
+				3CF1F9002584FDFF00A1980A /* Resources */,
+				3CF1F90C2585013900A1980A /* UI */,
+				3CF1F8962584F48300A1980A /* Info.plist */,
+			);
+			path = Stargazers;
+			sourceTree = "<group>";
+		};
+		3CF1F89E2584F48300A1980A /* StargazersTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F89F2584F48300A1980A /* StargazersTests.swift */,
+				3CF1F8A12584F48300A1980A /* Info.plist */,
+			);
+			path = StargazersTests;
+			sourceTree = "<group>";
+		};
+		3CF1F8A92584F48300A1980A /* StargazersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F8AA2584F48300A1980A /* StargazersUITests.swift */,
+				3CF1F8AC2584F48300A1980A /* Info.plist */,
+			);
+			path = StargazersUITests;
+			sourceTree = "<group>";
+		};
+		3CF1F8FF2584FDDC00A1980A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F9AC25852F4C00A1980A /* Stargazer List */,
+				3C4B94182586105B001653F3 /* Stargazer Row */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CF1F9002584FDFF00A1980A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F8912584F48300A1980A /* Assets.xcassets */,
+				3CF1F97B25851C2E00A1980A /* Localizable.strings */,
+				3CF1F9042584FE5A00A1980A /* Preview */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3CF1F9042584FE5A00A1980A /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F8942584F48300A1980A /* Preview Assets.xcassets */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		3CF1F90C2585013900A1980A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F90D2585020600A1980A /* Components */,
+				3CF1F8FF2584FDDC00A1980A /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3CF1F90D2585020600A1980A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F9192585029500A1980A /* IconTextField.swift */,
+				3C4B9413258600E6001653F3 /* InfiniteList.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3CF1F92F258508EA00A1980A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F9A42585271200A1980A /* Stargazer.swift */,
+				3CF1F9302585091000A1980A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CF1F93825850C6500A1980A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F94725850E5F00A1980A /* Client */,
+				3CF1F954258510E100A1980A /* Requests */,
+				3CF1F99525851F8C00A1980A /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3CF1F94725850E5F00A1980A /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F94825850E5F00A1980A /* ApiClient.swift */,
+				3CF1F971258518B300A1980A /* ApiEnvironment.swift */,
+				3CF1F94A25850E5F00A1980A /* ApiRequest.swift */,
+				3CF1F94925850E5F00A1980A /* URLRequestCompatible.swift */,
+				3CF1F98625851E7800A1980A /* Implementation */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		3CF1F954258510E100A1980A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F9552585110C00A1980A /* ListStargazers.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3CF1F963258515C800A1980A /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F967258515D700A1980A /* Injector.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		3CF1F98625851E7800A1980A /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F98725851E9000A1980A /* AlamofireApiClient.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		3CF1F99525851F8C00A1980A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F99625851FB100A1980A /* GitHubService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3CF1F9AC25852F4C00A1980A /* Stargazer List */ = {
+			isa = PBXGroup;
+			children = (
+				3CF1F88F2584F48200A1980A /* StargazerListView.swift */,
+				3CF1F9272585071F00A1980A /* StargazerListViewModel.swift */,
+			);
+			path = "Stargazer List";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CF1F8892584F48200A1980A /* Stargazers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF1F8AF2584F48300A1980A /* Build configuration list for PBXNativeTarget "Stargazers" */;
+			buildPhases = (
+				3CF1F9082584FF3A00A1980A /* Run SwiftLint */,
+				3CF1F8862584F48200A1980A /* Sources */,
+				3CF1F8872584F48200A1980A /* Frameworks */,
+				3CF1F8882584F48200A1980A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stargazers;
+			packageProductDependencies = (
+				3CF1F95E258515C100A1980A /* Swinject */,
+				3CF1F99025851EDA00A1980A /* Alamofire */,
+			);
+			productName = Stargazers;
+			productReference = 3CF1F88A2584F48200A1980A /* Stargazers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CF1F89A2584F48300A1980A /* StargazersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF1F8B22584F48300A1980A /* Build configuration list for PBXNativeTarget "StargazersTests" */;
+			buildPhases = (
+				3CF1F8972584F48300A1980A /* Sources */,
+				3CF1F8982584F48300A1980A /* Frameworks */,
+				3CF1F8992584F48300A1980A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CF1F89D2584F48300A1980A /* PBXTargetDependency */,
+			);
+			name = StargazersTests;
+			productName = StargazersTests;
+			productReference = 3CF1F89B2584F48300A1980A /* StargazersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CF1F8A52584F48300A1980A /* StargazersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF1F8B52584F48300A1980A /* Build configuration list for PBXNativeTarget "StargazersUITests" */;
+			buildPhases = (
+				3CF1F8A22584F48300A1980A /* Sources */,
+				3CF1F8A32584F48300A1980A /* Frameworks */,
+				3CF1F8A42584F48300A1980A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CF1F8A82584F48300A1980A /* PBXTargetDependency */,
+			);
+			name = StargazersUITests;
+			productName = StargazersUITests;
+			productReference = 3CF1F8A62584F48300A1980A /* StargazersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CF1F8822584F48200A1980A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					3CF1F8892584F48200A1980A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					3CF1F89A2584F48300A1980A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 3CF1F8892584F48200A1980A;
+					};
+					3CF1F8A52584F48300A1980A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 3CF1F8892584F48200A1980A;
+					};
+				};
+			};
+			buildConfigurationList = 3CF1F8852584F48200A1980A /* Build configuration list for PBXProject "Stargazers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				it,
+			);
+			mainGroup = 3CF1F8812584F48200A1980A;
+			packageReferences = (
+				3CF1F95D258515C100A1980A /* XCRemoteSwiftPackageReference "Swinject" */,
+				3CF1F98F25851EDA00A1980A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 3CF1F88B2584F48200A1980A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CF1F8892584F48200A1980A /* Stargazers */,
+				3CF1F89A2584F48300A1980A /* StargazersTests */,
+				3CF1F8A52584F48300A1980A /* StargazersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CF1F8882584F48200A1980A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF1F8952584F48300A1980A /* Preview Assets.xcassets in Resources */,
+				3CF1F97925851C2E00A1980A /* Localizable.strings in Resources */,
+				3CF1F8922584F48300A1980A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF1F8992584F48300A1980A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF1F8A42584F48300A1980A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CF1F9082584FF3A00A1980A /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CF1F8862584F48200A1980A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF1F8902584F48200A1980A /* StargazerListView.swift in Sources */,
+				3CF1F88E2584F48200A1980A /* StargazersApp.swift in Sources */,
+				3CF1F9282585071F00A1980A /* StargazerListViewModel.swift in Sources */,
+				3CF1F99725851FB100A1980A /* GitHubService.swift in Sources */,
+				3CF1F94C25850E5F00A1980A /* URLRequestCompatible.swift in Sources */,
+				3CF1F9312585091000A1980A /* User.swift in Sources */,
+				3CF1F968258515D700A1980A /* Injector.swift in Sources */,
+				3CF1F91A2585029500A1980A /* IconTextField.swift in Sources */,
+				3C4B941A25861073001653F3 /* StargazerRow.swift in Sources */,
+				3C4B9414258600E6001653F3 /* InfiniteList.swift in Sources */,
+				3CF1F972258518B300A1980A /* ApiEnvironment.swift in Sources */,
+				3CF1F98825851E9000A1980A /* AlamofireApiClient.swift in Sources */,
+				3CF1F94D25850E5F00A1980A /* ApiRequest.swift in Sources */,
+				3CF1F9562585110C00A1980A /* ListStargazers.swift in Sources */,
+				3CF1F94B25850E5F00A1980A /* ApiClient.swift in Sources */,
+				3CF1F9A52585271200A1980A /* Stargazer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF1F8972584F48300A1980A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF1F8A02584F48300A1980A /* StargazersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF1F8A22584F48300A1980A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF1F8AB2584F48300A1980A /* StargazersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CF1F89D2584F48300A1980A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CF1F8892584F48200A1980A /* Stargazers */;
+			targetProxy = 3CF1F89C2584F48300A1980A /* PBXContainerItemProxy */;
+		};
+		3CF1F8A82584F48300A1980A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CF1F8892584F48200A1980A /* Stargazers */;
+			targetProxy = 3CF1F8A72584F48300A1980A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CF1F97B25851C2E00A1980A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CF1F97A25851C2E00A1980A /* en */,
+				3CF1F97F25851CE900A1980A /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CF1F8AD2584F48300A1980A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CF1F8AE2584F48300A1980A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CF1F8B02584F48300A1980A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Stargazers/Resources/Preview\"";
+				DEVELOPMENT_TEAM = 764BGZ596R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Stargazers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.dmazzoni.Stargazers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CF1F8B12584F48300A1980A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Stargazers/Resources/Preview\"";
+				DEVELOPMENT_TEAM = 764BGZ596R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Stargazers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.dmazzoni.Stargazers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CF1F8B32584F48300A1980A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764BGZ596R;
+				INFOPLIST_FILE = StargazersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.dmazzoni.StargazersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stargazers.app/Stargazers";
+			};
+			name = Debug;
+		};
+		3CF1F8B42584F48300A1980A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764BGZ596R;
+				INFOPLIST_FILE = StargazersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.dmazzoni.StargazersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stargazers.app/Stargazers";
+			};
+			name = Release;
+		};
+		3CF1F8B62584F48300A1980A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764BGZ596R;
+				INFOPLIST_FILE = StargazersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.dmazzoni.StargazersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stargazers;
+			};
+			name = Debug;
+		};
+		3CF1F8B72584F48300A1980A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764BGZ596R;
+				INFOPLIST_FILE = StargazersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.dmazzoni.StargazersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stargazers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CF1F8852584F48200A1980A /* Build configuration list for PBXProject "Stargazers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF1F8AD2584F48300A1980A /* Debug */,
+				3CF1F8AE2584F48300A1980A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF1F8AF2584F48300A1980A /* Build configuration list for PBXNativeTarget "Stargazers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF1F8B02584F48300A1980A /* Debug */,
+				3CF1F8B12584F48300A1980A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF1F8B22584F48300A1980A /* Build configuration list for PBXNativeTarget "StargazersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF1F8B32584F48300A1980A /* Debug */,
+				3CF1F8B42584F48300A1980A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF1F8B52584F48300A1980A /* Build configuration list for PBXNativeTarget "StargazersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF1F8B62584F48300A1980A /* Debug */,
+				3CF1F8B72584F48300A1980A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CF1F95D258515C100A1980A /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		3CF1F98F25851EDA00A1980A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CF1F95E258515C100A1980A /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CF1F95D258515C100A1980A /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		3CF1F99025851EDA00A1980A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CF1F98F25851EDA00A1980A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3CF1F8822584F48200A1980A /* Project object */;
+}

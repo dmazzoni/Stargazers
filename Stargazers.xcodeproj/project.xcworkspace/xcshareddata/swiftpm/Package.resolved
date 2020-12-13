@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "9e0328127dfb801cefe8ac53a13c0c90a7770448",
+          "version": "5.4.0"
+        }
+      },
+      {
+        "package": "Swinject",
+        "repositoryURL": "https://github.com/Swinject/Swinject.git",
+        "state": {
+          "branch": null,
+          "revision": "8a76d2c74bafbb455763487cc6a08e91bad1f78b",
+          "version": "2.7.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

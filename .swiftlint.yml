@@ -1,0 +1,14 @@
+disabled_rules:
+  - line_length
+  - trailing_whitespace
+  - unused_optional_binding
+
+opt_in_rules:
+  - force_unwrapping
+
+cyclomatic_complexity:
+  ignores_case_statements: true
+
+identifier_name:
+  excluded:
+    - id
