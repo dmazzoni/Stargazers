@@ -1,5 +1,5 @@
 //
-//  IconTextField.swift
+//  FormTextField.swift
 //  Stargazers
 //
 //  Created by Davide Mazzoni on 12/12/20.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-// MARK: - IconTextField
-struct IconTextField: View {
+// MARK: - FormTextField
+struct FormTextField: View {
     
     @Binding var text: String
     
@@ -27,9 +27,9 @@ struct IconTextField: View {
 }
 
 // MARK: - Previews
-struct IconTextField_Previews: PreviewProvider {
+struct FormTextField_Previews: PreviewProvider {
     
     static var previews: some View {
-        IconTextField(text: .constant("test"), icon: Image(systemName: "person"), placeholder: "Placeholder")
+        FormTextField(text: .constant("test"), icon: Image(systemName: "person"), placeholder: "Placeholder")
     }
 }

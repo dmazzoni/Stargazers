@@ -14,8 +14,8 @@ struct StargazerListView: View {
     
     var body: some View {
         VStack {
-            IconTextField(text: $viewModel.repositoryOwner, icon: Image(systemName: "person"), placeholder: "Owner")
-            IconTextField(text: $viewModel.repositoryName, icon: Image(systemName: "externaldrive.connected.to.line.below"), placeholder: "Name")
+            FormTextField(text: $viewModel.repositoryOwner, icon: Image(systemName: "person"), placeholder: "Owner")
+            FormTextField(text: $viewModel.repositoryName, icon: Image(systemName: "externaldrive.connected.to.line.below"), placeholder: "Name")
             Button("Search", action: viewModel.didRequestStargazerUpdate)
                 .disabled(viewModel.isSearchDisabled)
             Divider()
