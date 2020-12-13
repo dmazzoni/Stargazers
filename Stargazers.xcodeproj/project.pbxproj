@@ -169,8 +169,8 @@
 				3CF1F92F258508EA00A1980A /* Model */,
 				3CF1F93825850C6500A1980A /* Networking */,
 				3C4B9424258614AA001653F3 /* Repository */,
-				3CF1F9002584FDFF00A1980A /* Resources */,
 				3CF1F90C2585013900A1980A /* UI */,
+				3CF1F9002584FDFF00A1980A /* Resources */,
 				3CF1F8962584F48300A1980A /* Info.plist */,
 			);
 			path = Stargazers;

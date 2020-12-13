@@ -14,16 +14,6 @@ protocol GitHubRepository {
     func fetchStargazers(request: ListStargazersRequest) -> AnyPublisher<[Stargazer], Error>
 }
 
-extension GitHubRepository {
-        
-    var jsonDecoder: JSONDecoder {
-        let result = JSONDecoder()
-        result.keyDecodingStrategy = .convertFromSnakeCase
-        result.dateDecodingStrategy = .iso8601
-        return result
-    }
-}
-
 // MARK: - RemoteGitHubRepository
 final class RemoteGitHubRepository {
     
@@ -47,5 +37,16 @@ extension RemoteGitHubRepository: GitHubRepository {
                 return result
             }
             .eraseToAnyPublisher()
+    }
+}
+
+// MARK: - Private
+private extension RemoteGitHubRepository {
+        
+    var jsonDecoder: JSONDecoder {
+        let result = JSONDecoder()
+        result.keyDecodingStrategy = .convertFromSnakeCase
+        result.dateDecodingStrategy = .iso8601
+        return result
     }
 }
