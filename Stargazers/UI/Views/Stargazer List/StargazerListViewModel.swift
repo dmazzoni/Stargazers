@@ -51,9 +51,9 @@ private extension StargazerListViewModel {
     
     func setupBindings() {
         
-        $repositoryName.combineLatest($repositoryOwner)
-            .map { name, owner in
-                name.isEmpty || owner.isEmpty
+        $repositoryName.combineLatest($repositoryOwner, $isLoading)
+            .map { name, owner, isLoading in
+                name.isEmpty || owner.isEmpty || isLoading
             }
             .assign(to: \.isSearchDisabled, on: self)
             .store(in: &self.cancelBag)
@@ -69,8 +69,11 @@ private extension StargazerListViewModel {
         )
         
         self.gitHubRepository.fetchStargazers(request: request)
-        .sink { [weak self] _ in
+        .sink { [weak self] completion in
             self?.isLoading = false
+            if case let .failure(error) = completion {
+                NSLog("\(error.localizedDescription)")
+            }
         } receiveValue: { [weak self] value in
             self?.isLoading = false
             self?.stargazers += value
