@@ -22,7 +22,7 @@ struct FormTextField: View {
             .autocapitalization(.none)
             .leftImage(icon)
             .clearButton(text: $text)
-            .padding()
+            .padding(.horizontal)
     }
 }
 
