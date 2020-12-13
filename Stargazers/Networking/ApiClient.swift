@@ -8,9 +8,6 @@
 import Combine
 import Foundation
 
-// MARK: - ApiResult
-typealias ApiResult<T: ApiRequest> = Result<T.Response, Swift.Error>
-
 // MARK: - ApiClient
 protocol ApiClient {
     
