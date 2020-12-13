@@ -24,6 +24,12 @@ struct StargazerListView: View {
             }
             .onScrollToBottom(perform: viewModel.didRequestNextPage)
         }
+        .alert(item: $viewModel.errorModel) { model in
+            Alert(
+                title: Text("Error"),
+                message: Text(model.message)
+            )
+        }
     }
 }
 

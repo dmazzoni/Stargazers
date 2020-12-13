@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C48ABC825865694004A3FFD /* FetchImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48ABC725865694004A3FFD /* FetchImage */; };
 		3C48ABCD258656AB004A3FFD /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABCC258656AB004A3FFD /* RemoteImage.swift */; };
+		3C48ABDA25866FA2004A3FFD /* SimpleErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABD925866FA2004A3FFD /* SimpleErrorModel.swift */; };
 		3C4B9414258600E6001653F3 /* InfiniteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B9413258600E6001653F3 /* InfiniteList.swift */; };
 		3C4B941A25861073001653F3 /* StargazerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B941925861073001653F3 /* StargazerRow.swift */; };
 		3C4B9426258614BC001653F3 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B9425258614BC001653F3 /* GitHubRepository.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		3C48ABCC258656AB004A3FFD /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		3C48ABD925866FA2004A3FFD /* SimpleErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleErrorModel.swift; sourceTree = "<group>"; };
 		3C4B9413258600E6001653F3 /* InfiniteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteList.swift; sourceTree = "<group>"; };
 		3C4B941925861073001653F3 /* StargazerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerRow.swift; sourceTree = "<group>"; };
 		3C4B9425258614BC001653F3 /* GitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepository.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			children = (
 				3CF1F9A42585271200A1980A /* Stargazer.swift */,
 				3CF1F9302585091000A1980A /* User.swift */,
+				3C48ABD925866FA2004A3FFD /* SimpleErrorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 			files = (
 				3CF1F8902584F48200A1980A /* StargazerListView.swift in Sources */,
 				3C48ABCD258656AB004A3FFD /* RemoteImage.swift in Sources */,
+				3C48ABDA25866FA2004A3FFD /* SimpleErrorModel.swift in Sources */,
 				3CF1F88E2584F48200A1980A /* StargazersApp.swift in Sources */,
 				3CF1F9282585071F00A1980A /* StargazerListViewModel.swift in Sources */,
 				3CF1F94C25850E5F00A1980A /* URLRequestCompatible.swift in Sources */,

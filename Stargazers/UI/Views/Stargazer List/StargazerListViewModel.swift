@@ -19,6 +19,7 @@ final class StargazerListViewModel: ObservableObject {
     @Published var stargazers: [Stargazer] = []
     @Published var isSearchDisabled: Bool = false
     @Published var isLoading: Bool = false
+    @Published var errorModel: SimpleErrorModel?
     
     private lazy var gitHubRepository: GitHubRepository = {
         Injector.shared.resolve(GitHubRepository.self)
@@ -72,7 +73,7 @@ private extension StargazerListViewModel {
         .sink { [weak self] completion in
             self?.isLoading = false
             if case let .failure(error) = completion {
-                NSLog("\(error.localizedDescription)")
+                self?.errorModel = SimpleErrorModel(message: error.localizedDescription)
             }
         } receiveValue: { [weak self] value in
             self?.isLoading = false
