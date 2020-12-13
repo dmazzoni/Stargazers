@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C48ABC825865694004A3FFD /* FetchImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48ABC725865694004A3FFD /* FetchImage */; };
+		3C48ABCD258656AB004A3FFD /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABCC258656AB004A3FFD /* RemoteImage.swift */; };
 		3C4B9414258600E6001653F3 /* InfiniteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B9413258600E6001653F3 /* InfiniteList.swift */; };
 		3C4B941A25861073001653F3 /* StargazerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B941925861073001653F3 /* StargazerRow.swift */; };
 		3C4B9426258614BC001653F3 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B9425258614BC001653F3 /* GitHubRepository.swift */; };
@@ -50,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C48ABCC258656AB004A3FFD /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		3C4B9413258600E6001653F3 /* InfiniteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteList.swift; sourceTree = "<group>"; };
 		3C4B941925861073001653F3 /* StargazerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerRow.swift; sourceTree = "<group>"; };
 		3C4B9425258614BC001653F3 /* GitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepository.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C48ABC825865694004A3FFD /* FetchImage in Frameworks */,
 				3CF1F95F258515C100A1980A /* Swinject in Frameworks */,
 				3CF1F99125851EDA00A1980A /* Alamofire in Frameworks */,
 			);
@@ -235,6 +239,7 @@
 			children = (
 				3CF1F9192585029500A1980A /* IconTextField.swift */,
 				3C4B9413258600E6001653F3 /* InfiniteList.swift */,
+				3C48ABCC258656AB004A3FFD /* RemoteImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 			packageProductDependencies = (
 				3CF1F95E258515C100A1980A /* Swinject */,
 				3CF1F99025851EDA00A1980A /* Alamofire */,
+				3C48ABC725865694004A3FFD /* FetchImage */,
 			);
 			productName = Stargazers;
 			productReference = 3CF1F88A2584F48200A1980A /* Stargazers.app */;
@@ -379,6 +385,7 @@
 			packageReferences = (
 				3CF1F95D258515C100A1980A /* XCRemoteSwiftPackageReference "Swinject" */,
 				3CF1F98F25851EDA00A1980A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3C48ABC625865694004A3FFD /* XCRemoteSwiftPackageReference "FetchImage" */,
 			);
 			productRefGroup = 3CF1F88B2584F48200A1980A /* Products */;
 			projectDirPath = "";
@@ -445,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CF1F8902584F48200A1980A /* StargazerListView.swift in Sources */,
+				3C48ABCD258656AB004A3FFD /* RemoteImage.swift in Sources */,
 				3CF1F88E2584F48200A1980A /* StargazersApp.swift in Sources */,
 				3CF1F9282585071F00A1980A /* StargazerListViewModel.swift in Sources */,
 				3CF1F94C25850E5F00A1980A /* URLRequestCompatible.swift in Sources */,
@@ -795,6 +803,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3C48ABC625865694004A3FFD /* XCRemoteSwiftPackageReference "FetchImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/FetchImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
 		3CF1F95D258515C100A1980A /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
@@ -814,6 +830,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3C48ABC725865694004A3FFD /* FetchImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C48ABC625865694004A3FFD /* XCRemoteSwiftPackageReference "FetchImage" */;
+			productName = FetchImage;
+		};
 		3CF1F95E258515C100A1980A /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3CF1F95D258515C100A1980A /* XCRemoteSwiftPackageReference "Swinject" */;
