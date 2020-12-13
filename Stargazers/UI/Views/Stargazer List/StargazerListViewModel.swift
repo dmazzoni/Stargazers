@@ -39,7 +39,7 @@ extension StargazerListViewModel {
     func didRequestStargazerUpdate() {
         self.stargazers = []
         self.currentPage = 1
-        self.loadNextPage()
+        self.didRequestNextPage()
     }
     
     func didRequestNextPage() {
