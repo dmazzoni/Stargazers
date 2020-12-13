@@ -24,7 +24,7 @@ struct InfiniteList<Item: Identifiable, RowContent: View>: View {
                 progressView
                 Spacer()
             } else {
-                List {
+                VStack {
                     itemRows
                     if isLoading {
                         progressView
@@ -54,7 +54,7 @@ private extension InfiniteList {
     
     var itemRows: some View {
         
-        ForEach(items) { item in
+        List(items) { item in
             rowBuilder(item)
                 .onAppear {
                     if items.last?.id == item.id {
