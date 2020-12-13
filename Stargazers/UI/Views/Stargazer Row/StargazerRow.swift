@@ -13,6 +13,9 @@ struct StargazerRow: View {
     var stargazer: Stargazer
     
     var body: some View {
-        Text(stargazer.user.login)
+        HStack(spacing: 16) {
+            Image(systemName: "person.crop.circle")
+            Text(stargazer.user.login)
+        }
     }
 }

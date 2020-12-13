@@ -8,14 +8,14 @@
 import Foundation
 
 // MARK: - ListStargazersRequest
-struct ListStargazersRequest {
+struct ListStargazersRequest: GitHubRequest {
     
     let repositoryOwner: String
     let repositoryName: String
     let page: Int
 }
 
-// MARK: - ApiRequest
+// MARK: - ApiRequest conformance
 extension ListStargazersRequest: ApiRequest {
     
     typealias Response = [ListStargazersResponseItem]

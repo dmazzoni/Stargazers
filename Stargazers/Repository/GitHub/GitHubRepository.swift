@@ -1,5 +1,5 @@
 //
-//  GitHubService.swift
+//  GitHubRepository.swift
 //  Stargazers
 //
 //  Created by Davide Mazzoni on 12/12/20.
@@ -8,17 +8,13 @@
 import Combine
 import Foundation
 
-// MARK: - GitHubService
-protocol GitHubService {
+// MARK: - GitHubRepository
+protocol GitHubRepository {
     
-    func fetchStargazers(
-        repositoryOwner: String,
-        repositoryName: String,
-        page: Int
-    ) -> AnyPublisher<[Stargazer], Error>
+    func fetchStargazers(request: ListStargazersRequest) -> AnyPublisher<[Stargazer], Error>
 }
 
-extension GitHubService {
+extension GitHubRepository {
         
     var jsonDecoder: JSONDecoder {
         let result = JSONDecoder()
@@ -28,8 +24,8 @@ extension GitHubService {
     }
 }
 
-// MARK: - RemoteGitHubService
-final class RemoteGitHubService {
+// MARK: - RemoteGitHubRepository
+final class RemoteGitHubRepository {
     
     private lazy var apiClient: ApiClient = {
         var client = Injector.shared.resolve(ApiClient.self)
@@ -39,15 +35,9 @@ final class RemoteGitHubService {
 }
 
 // MARK: - API
-extension RemoteGitHubService: GitHubService {
+extension RemoteGitHubRepository: GitHubRepository {
     
-    func fetchStargazers(
-        repositoryOwner: String,
-        repositoryName: String,
-        page: Int
-    ) -> AnyPublisher<[Stargazer], Error> {
-        
-        let request = ListStargazersRequest(repositoryOwner: repositoryOwner, repositoryName: repositoryName, page: page)
+    func fetchStargazers(request: ListStargazersRequest) -> AnyPublisher<[Stargazer], Error> {
         
         return self.apiClient.request(request: request)
             .map { response -> [Stargazer] in

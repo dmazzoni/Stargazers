@@ -34,23 +34,12 @@ private extension Injector {
     
     func setupContainer() {
         
-        // swiftlint:disable force_unwrapping
-        
-        self.container.register(ApiEnvironment.self) { _ in
-            ApiEnvironment(
-                baseURL: URL(string: "https://api.github.com")!
-            )
-        }
-        .inObjectScope(.container)
-        
         self.container.register(ApiClient.self) { _ in
             AlamofireNetworkClient()
         }
         
-        self.container.register(GitHubService.self) { _ in
-            RemoteGitHubService()
+        self.container.register(GitHubRepository.self) { _ in
+            RemoteGitHubRepository()
         }
-        
-        // swiftlint:enable force_unwrapping
     }
 }

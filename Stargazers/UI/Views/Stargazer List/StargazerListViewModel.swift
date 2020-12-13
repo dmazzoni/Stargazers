@@ -20,8 +20,8 @@ final class StargazerListViewModel: ObservableObject {
     @Published var isSearchDisabled: Bool = false
     @Published var isLoading: Bool = false
     
-    private lazy var service: GitHubService = {
-        Injector.shared.resolve(GitHubService.self)
+    private lazy var gitHubRepository: GitHubRepository = {
+        Injector.shared.resolve(GitHubRepository.self)
     }()
     
     private var currentPage: Int = 1
@@ -62,11 +62,13 @@ private extension StargazerListViewModel {
     func loadNextPage() {
         
         self.isLoading = true
-        self.service.fetchStargazers(
-            repositoryOwner: self.repositoryOwner,
-            repositoryName: self.repositoryName,
+        let request = ListStargazersRequest(
+            repositoryOwner: repositoryOwner,
+            repositoryName: repositoryName,
             page: self.currentPage
         )
+        
+        self.gitHubRepository.fetchStargazers(request: request)
         .sink { [weak self] _ in
             self?.isLoading = false
         } receiveValue: { [weak self] value in
