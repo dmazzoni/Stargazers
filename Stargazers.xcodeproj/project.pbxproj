@@ -10,6 +10,8 @@
 		3C48ABC825865694004A3FFD /* FetchImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48ABC725865694004A3FFD /* FetchImage */; };
 		3C48ABCD258656AB004A3FFD /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABCC258656AB004A3FFD /* RemoteImage.swift */; };
 		3C48ABDA25866FA2004A3FFD /* SimpleErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABD925866FA2004A3FFD /* SimpleErrorModel.swift */; };
+		3C48ABE6258673A2004A3FFD /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABE5258673A2004A3FFD /* ClearButton.swift */; };
+		3C48ABEE25867553004A3FFD /* LeftImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABED25867553004A3FFD /* LeftImage.swift */; };
 		3C4B9414258600E6001653F3 /* InfiniteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B9413258600E6001653F3 /* InfiniteList.swift */; };
 		3C4B941A25861073001653F3 /* StargazerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B941925861073001653F3 /* StargazerRow.swift */; };
 		3C4B9426258614BC001653F3 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B9425258614BC001653F3 /* GitHubRepository.swift */; };
@@ -55,6 +57,8 @@
 /* Begin PBXFileReference section */
 		3C48ABCC258656AB004A3FFD /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		3C48ABD925866FA2004A3FFD /* SimpleErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleErrorModel.swift; sourceTree = "<group>"; };
+		3C48ABE5258673A2004A3FFD /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
+		3C48ABED25867553004A3FFD /* LeftImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftImage.swift; sourceTree = "<group>"; };
 		3C4B9413258600E6001653F3 /* InfiniteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteList.swift; sourceTree = "<group>"; };
 		3C4B941925861073001653F3 /* StargazerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerRow.swift; sourceTree = "<group>"; };
 		3C4B9425258614BC001653F3 /* GitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepository.swift; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C48ABE42586738E004A3FFD /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				3C48ABE5258673A2004A3FFD /* ClearButton.swift */,
+				3C48ABED25867553004A3FFD /* LeftImage.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		3C4B94182586105B001653F3 /* Stargazer Row */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				3CF1F90D2585020600A1980A /* Components */,
+				3C48ABE42586738E004A3FFD /* Modifiers */,
 				3CF1F8FF2584FDDC00A1980A /* Views */,
 			);
 			path = UI;
@@ -466,8 +480,10 @@
 				3C4B941A25861073001653F3 /* StargazerRow.swift in Sources */,
 				3C4B9414258600E6001653F3 /* InfiniteList.swift in Sources */,
 				3CF1F98825851E9000A1980A /* AlamofireApiClient.swift in Sources */,
+				3C48ABEE25867553004A3FFD /* LeftImage.swift in Sources */,
 				3C4B94422586170D001653F3 /* GitHubRequest.swift in Sources */,
 				3CF1F94D25850E5F00A1980A /* ApiRequest.swift in Sources */,
+				3C48ABE6258673A2004A3FFD /* ClearButton.swift in Sources */,
 				3CF1F9562585110C00A1980A /* ListStargazersRequest.swift in Sources */,
 				3CF1F94B25850E5F00A1980A /* ApiClient.swift in Sources */,
 				3CF1F9A52585271200A1980A /* Stargazer.swift in Sources */,

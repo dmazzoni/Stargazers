@@ -17,13 +17,12 @@ struct IconTextField: View {
     
     var body: some View {
         
-        HStack(alignment: .firstTextBaseline, spacing: 10) {
-            icon
-            TextField(placeholder, text: $text)
-                .disableAutocorrection(true)
-                .autocapitalization(.none)
-        }
-        .padding()
+        TextField(placeholder, text: $text)
+            .disableAutocorrection(true)
+            .autocapitalization(.none)
+            .leftImage(icon)
+            .clearButton(text: $text)
+            .padding()
     }
 }
 
