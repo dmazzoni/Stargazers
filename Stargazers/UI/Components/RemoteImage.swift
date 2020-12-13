@@ -24,14 +24,23 @@ struct RemoteImage: View {
         Group {
             if image.isLoading {
                 ProgressView()
-            } else if let fetchedImage = image.view {
-                fetchedImage
+            } else {
+                imageView
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-            } else {
-                placeholder
             }
         }
+        .onDisappear {
+            self.image.cancel()
+        }
+    }
+}
+
+private extension RemoteImage {
+    
+    @ViewBuilder
+    var imageView: Image {
+        self.image.view ?? self.placeholder
     }
 }
 
