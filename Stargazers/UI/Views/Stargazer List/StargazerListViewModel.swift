@@ -19,6 +19,7 @@ final class StargazerListViewModel: ObservableObject {
     @Published var stargazers: [Stargazer] = []
     @Published var isSearchDisabled: Bool = false
     @Published var isLoading: Bool = false
+    @Published var showListPlaceholder: Bool = false
     @Published var errorModel: SimpleErrorModel?
     
     private lazy var gitHubRepository: GitHubRepository = {
@@ -79,6 +80,7 @@ private extension StargazerListViewModel {
             self?.isLoading = false
             self?.stargazers += value
             self?.currentPage += 1
+            self?.showListPlaceholder = (self?.stargazers.isEmpty ?? true)
         }
         .store(in: &self.cancelBag)
     }

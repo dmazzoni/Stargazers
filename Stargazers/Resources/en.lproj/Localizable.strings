@@ -9,3 +9,4 @@
 "Owner" = "Repository owner";
 "Name" = "Repository name";
 "Error" = "Error";
+"EmptyList" = "This repository has no stargazers";

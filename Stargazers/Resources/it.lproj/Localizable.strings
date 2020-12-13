@@ -9,3 +9,4 @@
 "Owner" = "Proprietario repository";
 "Name" = "Nome repository";
 "Error" = "Errore";
+"EmptyList" = "Nessuno stargazer presente per questo repository";

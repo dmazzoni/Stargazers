@@ -19,16 +19,36 @@ struct StargazerListView: View {
             Button("Search", action: viewModel.didRequestStargazerUpdate)
                 .disabled(viewModel.isSearchDisabled)
             Divider()
-            InfiniteList(items: $viewModel.stargazers, isLoading: $viewModel.isLoading) { item in
-                StargazerRow(stargazer: item)
+            if viewModel.showListPlaceholder {
+                listPlaceholder
+            } else {
+                listView
             }
-            .onScrollToBottom(perform: viewModel.didRequestNextPage)
         }
         .alert(item: $viewModel.errorModel) { model in
             Alert(
                 title: Text("Error"),
                 message: Text(model.message)
             )
+        }
+    }
+}
+
+// MARK: - Private
+private extension StargazerListView {
+    
+    var listView: some View {
+        InfiniteList(items: $viewModel.stargazers, isLoading: $viewModel.isLoading) { item in
+            StargazerRow(stargazer: item)
+        }
+        .onScrollToBottom(perform: viewModel.didRequestNextPage)
+    }
+    
+    var listPlaceholder: some View {
+        Group {
+            Spacer()
+            Text("EmptyList")
+            Spacer()
         }
     }
 }
