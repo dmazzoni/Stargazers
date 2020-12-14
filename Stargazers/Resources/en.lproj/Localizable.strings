@@ -8,5 +8,6 @@
 
 "Owner" = "Repository owner";
 "Name" = "Repository name";
+"Search" = "Search";
 "Error" = "Error";
 "EmptyList" = "This repository has no stargazers";
