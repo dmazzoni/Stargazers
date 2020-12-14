@@ -39,8 +39,8 @@ private extension ClearButton {
                 self.text = ""
             },
             label: {
-                Image(systemName: "delete.left")
-                    .foregroundColor(Color(.lightGray))
+                Image(systemName: "clear")
+                    .foregroundColor(Color(.darkGray))
             }
         )
     }
