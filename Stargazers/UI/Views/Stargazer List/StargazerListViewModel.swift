@@ -12,8 +12,7 @@ import Foundation
 final class StargazerListViewModel: ObservableObject {
     
     // View -> ViewModel
-    @Published var repositoryOwner: String = ""
-    @Published var repositoryName: String = ""
+    @Published var repo: Repo = Repo()
     
     // ViewModel -> View
     @Published var stargazers: [Stargazer] = []
@@ -53,9 +52,9 @@ private extension StargazerListViewModel {
     
     func setupBindings() {
         
-        $repositoryName.combineLatest($repositoryOwner, $isLoading)
-            .map { name, owner, isLoading in
-                name.isEmpty || owner.isEmpty || isLoading
+        $repo.combineLatest($isLoading)
+            .map { repo, isLoading in
+                repo.name.isEmpty || repo.owner.isEmpty || isLoading
             }
             .assign(to: \.isSearchDisabled, on: self)
             .store(in: &self.cancelBag)
@@ -64,9 +63,8 @@ private extension StargazerListViewModel {
     func loadNextPage() {
         
         self.isLoading = true
-        let repo = Repo(owner: self.repositoryOwner, name: self.repositoryName)
         let request = ListStargazersRequest(
-            repo: repo,
+            repo: self.repo,
             page: self.currentPage
         )
         

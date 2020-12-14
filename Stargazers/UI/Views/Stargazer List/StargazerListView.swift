@@ -14,10 +14,7 @@ struct StargazerListView: View {
     
     var body: some View {
         VStack {
-            RepositoryFormView(
-                repositoryOwner: $viewModel.repositoryOwner,
-                repositoryName: $viewModel.repositoryName
-            )
+            RepositoryFormView(repo: $viewModel.repo)
             searchButton
             Divider()
             if viewModel.showListPlaceholder {

@@ -10,15 +10,14 @@ import SwiftUI
 // MARK: - RepositoryFormView
 struct RepositoryFormView: View {
     
-    @Binding var repositoryOwner: String
-    @Binding var repositoryName: String
+    @Binding var repo: Repo
     
     var body: some View {
         
         VStack(spacing: 16) {
-            FormTextField(text: $repositoryOwner, icon: Image(systemName: "person"), placeholder: "Owner")
+            FormTextField(text: $repo.owner, icon: Image(systemName: "person"), placeholder: "Owner")
                 .accessibility(identifier: StargazerListAxIdentifiers.repositoryOwner.rawValue)
-            FormTextField(text: $repositoryName, icon: Image(systemName: "externaldrive.connected.to.line.below"), placeholder: "Name")
+            FormTextField(text: $repo.name, icon: Image(systemName: "externaldrive.connected.to.line.below"), placeholder: "Name")
                 .accessibility(identifier: StargazerListAxIdentifiers.repositoryName.rawValue)
         }
         .padding(.vertical, 16)

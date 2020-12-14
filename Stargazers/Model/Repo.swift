@@ -10,6 +10,6 @@ import Foundation
 // MARK: - Repo
 struct Repo {
     
-    let owner: String
-    let name: String
+    var owner: String = ""
+    var name: String = ""
 }
