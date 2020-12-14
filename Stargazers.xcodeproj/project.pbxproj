@@ -134,12 +134,12 @@
 			path = Accessibility;
 			sourceTree = "<group>";
 		};
-		3C3B35572587DF9700EE2154 /* Repository Form */ = {
+		3C3B35682587E59A00EE2154 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				3C3B35582587DFA700EE2154 /* RepositoryFormView.swift */,
+				3CF1F9272585071F00A1980A /* StargazerListViewModel.swift */,
 			);
-			path = "Repository Form";
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		3C48ABE42586738E004A3FFD /* Modifiers */ = {
@@ -157,14 +157,6 @@
 				3C48AC0125867C98004A3FFD /* View+KeyboardDismiss.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		3C4B94182586105B001653F3 /* Stargazer Row */ = {
-			isa = PBXGroup;
-			children = (
-				3C4B941925861073001653F3 /* StargazerRow.swift */,
-			);
-			path = "Stargazer Row";
 			sourceTree = "<group>";
 		};
 		3C4B9424258614AA001653F3 /* Repository */ = {
@@ -251,9 +243,9 @@
 		3CF1F8FF2584FDDC00A1980A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3C3B35572587DF9700EE2154 /* Repository Form */,
-				3CF1F9AC25852F4C00A1980A /* Stargazer List */,
-				3C4B94182586105B001653F3 /* Stargazer Row */,
+				3C3B35582587DFA700EE2154 /* RepositoryFormView.swift */,
+				3CF1F88F2584F48200A1980A /* StargazerListView.swift */,
+				3C4B941925861073001653F3 /* StargazerRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,6 +274,7 @@
 				3CF1F90D2585020600A1980A /* Components */,
 				3C48ABE42586738E004A3FFD /* Modifiers */,
 				3CF1F8FF2584FDDC00A1980A /* Views */,
+				3C3B35682587E59A00EE2154 /* View Models */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -332,15 +325,6 @@
 				3CF1F98725851E9000A1980A /* AlamofireApiClient.swift */,
 			);
 			path = Implementation;
-			sourceTree = "<group>";
-		};
-		3CF1F9AC25852F4C00A1980A /* Stargazer List */ = {
-			isa = PBXGroup;
-			children = (
-				3CF1F88F2584F48200A1980A /* StargazerListView.swift */,
-				3CF1F9272585071F00A1980A /* StargazerListViewModel.swift */,
-			);
-			path = "Stargazer List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
