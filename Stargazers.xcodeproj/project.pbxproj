@@ -10,6 +10,7 @@
 		3C3B340A2587514100EE2154 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B34092587514000EE2154 /* Repo.swift */; };
 		3C3B35352587D85900EE2154 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B35342587D85900EE2154 /* AccessibilityIdentifiers.swift */; };
 		3C3B35362587D85900EE2154 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B35342587D85900EE2154 /* AccessibilityIdentifiers.swift */; };
+		3C3B35592587DFA700EE2154 /* RepositoryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B35582587DFA700EE2154 /* RepositoryFormView.swift */; };
 		3C48ABC825865694004A3FFD /* FetchImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48ABC725865694004A3FFD /* FetchImage */; };
 		3C48ABCD258656AB004A3FFD /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABCC258656AB004A3FFD /* RemoteImage.swift */; };
 		3C48ABDA25866FA2004A3FFD /* SimpleErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABD925866FA2004A3FFD /* SimpleErrorModel.swift */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		3C3B34092587514000EE2154 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		3C3B35342587D85900EE2154 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		3C3B35582587DFA700EE2154 /* RepositoryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryFormView.swift; sourceTree = "<group>"; };
 		3C48ABCC258656AB004A3FFD /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		3C48ABD925866FA2004A3FFD /* SimpleErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleErrorModel.swift; sourceTree = "<group>"; };
 		3C48ABE5258673A2004A3FFD /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 				3C3B35342587D85900EE2154 /* AccessibilityIdentifiers.swift */,
 			);
 			path = Accessibility;
+			sourceTree = "<group>";
+		};
+		3C3B35572587DF9700EE2154 /* Repository Form */ = {
+			isa = PBXGroup;
+			children = (
+				3C3B35582587DFA700EE2154 /* RepositoryFormView.swift */,
+			);
+			path = "Repository Form";
 			sourceTree = "<group>";
 		};
 		3C48ABE42586738E004A3FFD /* Modifiers */ = {
@@ -241,6 +251,7 @@
 		3CF1F8FF2584FDDC00A1980A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3C3B35572587DF9700EE2154 /* Repository Form */,
 				3CF1F9AC25852F4C00A1980A /* Stargazer List */,
 				3C4B94182586105B001653F3 /* Stargazer Row */,
 			);
@@ -512,6 +523,7 @@
 				3C4B94422586170D001653F3 /* GitHubRequest.swift in Sources */,
 				3C3B35352587D85900EE2154 /* AccessibilityIdentifiers.swift in Sources */,
 				3CF1F94D25850E5F00A1980A /* ApiRequest.swift in Sources */,
+				3C3B35592587DFA700EE2154 /* RepositoryFormView.swift in Sources */,
 				3C48ABE6258673A2004A3FFD /* ClearButton.swift in Sources */,
 				3CF1F9562585110C00A1980A /* ListStargazersRequest.swift in Sources */,
 				3CF1F94B25850E5F00A1980A /* ApiClient.swift in Sources */,

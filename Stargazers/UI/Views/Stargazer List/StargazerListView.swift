@@ -14,7 +14,11 @@ struct StargazerListView: View {
     
     var body: some View {
         VStack {
-            repositoryForm
+            RepositoryFormView(
+                repositoryOwner: $viewModel.repositoryOwner,
+                repositoryName: $viewModel.repositoryName
+            )
+            searchButton
             Divider()
             if viewModel.showListPlaceholder {
                 listPlaceholder
@@ -33,18 +37,6 @@ struct StargazerListView: View {
 
 // MARK: - Private
 private extension StargazerListView {
-    
-    var repositoryForm: some View {
-        
-        VStack(spacing: 16) {
-            FormTextField(text: $viewModel.repositoryOwner, icon: Image(systemName: "person"), placeholder: "Owner")
-                .accessibility(identifier: StargazerListAxIdentifiers.repositoryOwner.rawValue)
-            FormTextField(text: $viewModel.repositoryName, icon: Image(systemName: "externaldrive.connected.to.line.below"), placeholder: "Name")
-                .accessibility(identifier: StargazerListAxIdentifiers.repositoryName.rawValue)
-            searchButton
-        }
-        .padding(.top, 16)
-    }
     
     var searchButton: some View {
         
