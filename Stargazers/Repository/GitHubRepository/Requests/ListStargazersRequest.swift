@@ -10,8 +10,7 @@ import Foundation
 // MARK: - ListStargazersRequest
 struct ListStargazersRequest: GitHubRequest {
     
-    let repositoryOwner: String
-    let repositoryName: String
+    let repo: Repo
     let page: Int
 }
 
@@ -21,7 +20,7 @@ extension ListStargazersRequest: ApiRequest {
     typealias Response = [ListStargazersResponseItem]
     
     var path: String {
-        "/repos/\(self.repositoryOwner)/\(self.repositoryName)/stargazers"
+        "/repos/\(self.repo.owner)/\(self.repo.name)/stargazers"
     }
     
     var method: ApiMethod { .get }

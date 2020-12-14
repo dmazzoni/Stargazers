@@ -64,9 +64,9 @@ private extension StargazerListViewModel {
     func loadNextPage() {
         
         self.isLoading = true
+        let repo = Repo(owner: self.repositoryOwner, name: self.repositoryName)
         let request = ListStargazersRequest(
-            repositoryOwner: self.repositoryOwner,
-            repositoryName: self.repositoryName,
+            repo: repo,
             page: self.currentPage
         )
         

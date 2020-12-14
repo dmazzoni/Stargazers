@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C3B340A2587514100EE2154 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B34092587514000EE2154 /* Repo.swift */; };
 		3C48ABC825865694004A3FFD /* FetchImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48ABC725865694004A3FFD /* FetchImage */; };
 		3C48ABCD258656AB004A3FFD /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABCC258656AB004A3FFD /* RemoteImage.swift */; };
 		3C48ABDA25866FA2004A3FFD /* SimpleErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48ABD925866FA2004A3FFD /* SimpleErrorModel.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C3B34092587514000EE2154 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		3C48ABCC258656AB004A3FFD /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		3C48ABD925866FA2004A3FFD /* SimpleErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleErrorModel.swift; sourceTree = "<group>"; };
 		3C48ABE5258673A2004A3FFD /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 		3CF1F92F258508EA00A1980A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C3B34092587514000EE2154 /* Repo.swift */,
 				3CF1F9A42585271200A1980A /* Stargazer.swift */,
 				3CF1F9302585091000A1980A /* User.swift */,
 				3C48ABD925866FA2004A3FFD /* SimpleErrorModel.swift */,
@@ -490,6 +493,7 @@
 				3C48AC0225867C98004A3FFD /* View+KeyboardDismiss.swift in Sources */,
 				3CF1F91A2585029500A1980A /* FormTextField.swift in Sources */,
 				3C4B941A25861073001653F3 /* StargazerRow.swift in Sources */,
+				3C3B340A2587514100EE2154 /* Repo.swift in Sources */,
 				3C4B9414258600E6001653F3 /* InfiniteList.swift in Sources */,
 				3CF1F98825851E9000A1980A /* AlamofireApiClient.swift in Sources */,
 				3C48ABEE25867553004A3FFD /* LeftImage.swift in Sources */,
