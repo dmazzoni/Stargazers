@@ -23,3 +23,14 @@ struct RepositoryFormView: View {
         .padding(.vertical, 16)
     }
 }
+
+// MARK: - Previews
+struct RepositoryFormView_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        RepositoryFormView(repo: .constant(Repo()))
+        RepositoryFormView(
+            repo: .constant(Repo(owner: "Foo", name: "Bar"))
+        )
+    }
+}

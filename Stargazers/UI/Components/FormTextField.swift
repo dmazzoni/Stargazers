@@ -31,5 +31,7 @@ struct FormTextField_Previews: PreviewProvider {
     
     static var previews: some View {
         FormTextField(text: .constant("test"), icon: Image(systemName: "person"), placeholder: "Placeholder")
+        
+        FormTextField(text: .constant(""), icon: Image(systemName: "person.fill"), placeholder: "Placeholder")
     }
 }
