@@ -38,7 +38,9 @@ private extension StargazerListView {
         
         VStack(spacing: 16) {
             FormTextField(text: $viewModel.repositoryOwner, icon: Image(systemName: "person"), placeholder: "Owner")
+                .accessibility(identifier: StargazerListAxIdentifiers.repositoryOwner.rawValue)
             FormTextField(text: $viewModel.repositoryName, icon: Image(systemName: "externaldrive.connected.to.line.below"), placeholder: "Name")
+                .accessibility(identifier: StargazerListAxIdentifiers.repositoryName.rawValue)
             searchButton
         }
         .padding(.top, 16)
@@ -51,6 +53,7 @@ private extension StargazerListView {
             self.viewModel.didRequestStargazerUpdate()
         }
         .disabled(viewModel.isSearchDisabled)
+        .accessibility(identifier: StargazerListAxIdentifiers.searchButton.rawValue)
     }
     
     var listView: some View {

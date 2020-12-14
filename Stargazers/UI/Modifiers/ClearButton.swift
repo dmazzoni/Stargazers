@@ -43,5 +43,6 @@ private extension ClearButton {
                     .foregroundColor(Color(.darkGray))
             }
         )
+        .accessibility(identifier: "button")
     }
 }
