@@ -13,10 +13,8 @@ struct StargazerListView: View {
     @ObservedObject var viewModel: StargazerListViewModel
     
     var body: some View {
-        VStack(spacing: 16) {
-            FormTextField(text: $viewModel.repositoryOwner, icon: Image(systemName: "person"), placeholder: "Owner")
-            FormTextField(text: $viewModel.repositoryName, icon: Image(systemName: "externaldrive.connected.to.line.below"), placeholder: "Name")
-            searchButton
+        VStack {
+            repositoryForm
             Divider()
             if viewModel.showListPlaceholder {
                 listPlaceholder
@@ -30,12 +28,21 @@ struct StargazerListView: View {
                 message: Text(model.message)
             )
         }
-        .padding(.top, 16)
     }
 }
 
 // MARK: - Private
 private extension StargazerListView {
+    
+    var repositoryForm: some View {
+        
+        VStack(spacing: 16) {
+            FormTextField(text: $viewModel.repositoryOwner, icon: Image(systemName: "person"), placeholder: "Owner")
+            FormTextField(text: $viewModel.repositoryName, icon: Image(systemName: "externaldrive.connected.to.line.below"), placeholder: "Name")
+            searchButton
+        }
+        .padding(.top, 16)
+    }
     
     var searchButton: some View {
         
