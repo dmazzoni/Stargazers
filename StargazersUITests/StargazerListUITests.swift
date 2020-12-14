@@ -13,7 +13,7 @@ class StargazerListUITests: XCTestCase {
         continueAfterFailure = false
     }
 
-    func testSearchButtonIsInitiallyDisabled() throws {
+    func testSearchButtonIsInitiallyDisabled() {
         
         let app = XCUIApplication()
         app.launch()
