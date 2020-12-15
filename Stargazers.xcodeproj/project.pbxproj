@@ -25,7 +25,7 @@
 		3CF1F8902584F48200A1980A /* StargazerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F88F2584F48200A1980A /* StargazerListView.swift */; };
 		3CF1F8922584F48300A1980A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1F8912584F48300A1980A /* Assets.xcassets */; };
 		3CF1F8952584F48300A1980A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1F8942584F48300A1980A /* Preview Assets.xcassets */; };
-		3CF1F8A02584F48300A1980A /* StargazersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F89F2584F48300A1980A /* StargazersTests.swift */; };
+		3CF1F8A02584F48300A1980A /* ListStargazersRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F89F2584F48300A1980A /* ListStargazersRequestTests.swift */; };
 		3CF1F8AB2584F48300A1980A /* StargazerListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F8AA2584F48300A1980A /* StargazerListUITests.swift */; };
 		3CF1F91A2585029500A1980A /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F9192585029500A1980A /* FormTextField.swift */; };
 		3CF1F9282585071F00A1980A /* StargazerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F9272585071F00A1980A /* StargazerListViewModel.swift */; };
@@ -79,7 +79,7 @@
 		3CF1F8942584F48300A1980A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3CF1F8962584F48300A1980A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CF1F89B2584F48300A1980A /* StargazersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CF1F89F2584F48300A1980A /* StargazersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersTests.swift; sourceTree = "<group>"; };
+		3CF1F89F2584F48300A1980A /* ListStargazersRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStargazersRequestTests.swift; sourceTree = "<group>"; };
 		3CF1F8A12584F48300A1980A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CF1F8A62584F48300A1980A /* StargazersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF1F8AA2584F48300A1980A /* StargazerListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerListUITests.swift; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 		3CF1F89E2584F48300A1980A /* StargazersTests */ = {
 			isa = PBXGroup;
 			children = (
-				3CF1F89F2584F48300A1980A /* StargazersTests.swift */,
+				3CF1F89F2584F48300A1980A /* ListStargazersRequestTests.swift */,
 				3CF1F8A12584F48300A1980A /* Info.plist */,
 			);
 			path = StargazersTests;
@@ -520,7 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CF1F8A02584F48300A1980A /* StargazersTests.swift in Sources */,
+				3CF1F8A02584F48300A1980A /* ListStargazersRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
