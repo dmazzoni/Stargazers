@@ -16,9 +16,9 @@ struct RepositoryFormView: View {
         
         VStack(spacing: 16) {
             FormTextField(text: $repo.owner, icon: Image(systemName: "person"), placeholder: "Owner")
-                .accessibility(identifier: StargazerListAxIdentifiers.repositoryOwner.rawValue)
+                .accessibility(identifier: RepositoryFormAxIdentifiers.owner.rawValue)
             FormTextField(text: $repo.name, icon: Image(systemName: "externaldrive.connected.to.line.below"), placeholder: "Name")
-                .accessibility(identifier: StargazerListAxIdentifiers.repositoryName.rawValue)
+                .accessibility(identifier: RepositoryFormAxIdentifiers.name.rawValue)
         }
         .padding(.vertical, 16)
     }

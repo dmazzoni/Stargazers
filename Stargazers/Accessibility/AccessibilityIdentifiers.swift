@@ -7,9 +7,13 @@
 
 import Foundation
 
+// MARK: - Repository Form
+enum RepositoryFormAxIdentifiers: String {
+    case owner
+    case name
+}
+
 // MARK: - Stargazer List
 enum StargazerListAxIdentifiers: String {
-    case repositoryOwner
-    case repositoryName
     case searchButton
 }
