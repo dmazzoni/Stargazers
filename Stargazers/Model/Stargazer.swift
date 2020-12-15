@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Stargazer
-struct Stargazer: Decodable {
+struct Stargazer: Decodable, Equatable {
     
     let user: User
     let timestamp: Date

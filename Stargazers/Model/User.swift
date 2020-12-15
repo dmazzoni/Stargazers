@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - User
-struct User: Decodable {
+struct User: Decodable, Equatable {
     
     let login: String
     let avatarUrl: URL?

@@ -34,6 +34,7 @@ private extension Injector {
     
     func setupContainer() {
         
+        // swiftlint:disable force_unwrapping
         self.container.register(ApiClient.self) { _ in
             AlamofireNetworkClient()
         }
@@ -46,5 +47,6 @@ private extension Injector {
             let repository = resolver.resolve(GitHubRepository.self)!
             return StargazerListViewModel(gitHubRepository: repository)
         }
+        // swiftlint:enable force_unwrapping
     }
 }

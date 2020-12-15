@@ -36,7 +36,10 @@ final class StargazerListViewModel: ObservableObject {
 extension StargazerListViewModel {
     
     func didRequestStargazerUpdate() {
-        self.stargazers = []
+        
+        if !self.stargazers.isEmpty {
+            self.stargazers = []
+        }
         self.currentPage = 1
         self.didRequestNextPage()
     }

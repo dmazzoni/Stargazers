@@ -23,6 +23,7 @@
 		3C4B941A25861073001653F3 /* StargazerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B941925861073001653F3 /* StargazerRow.swift */; };
 		3C4B9426258614BC001653F3 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B9425258614BC001653F3 /* GitHubRepository.swift */; };
 		3C4B94422586170D001653F3 /* GitHubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B94412586170D001653F3 /* GitHubRequest.swift */; };
+		3C53B4EF258960FB00198F91 /* CombineExpectations in Frameworks */ = {isa = PBXBuildFile; productRef = 3C53B4EE258960FB00198F91 /* CombineExpectations */; };
 		3CF1F88E2584F48200A1980A /* StargazersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F88D2584F48200A1980A /* StargazersApp.swift */; };
 		3CF1F8902584F48200A1980A /* StargazerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1F88F2584F48200A1980A /* StargazerListView.swift */; };
 		3CF1F8922584F48300A1980A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF1F8912584F48300A1980A /* Assets.xcassets */; };
@@ -117,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C53B4EF258960FB00198F91 /* CombineExpectations in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +199,13 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
+		3C53B4E925895CC800198F91 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		3CF1F8812584F48200A1980A = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				3C0759FF25891D2D00A24714 /* Mocks */,
+				3C53B4E925895CC800198F91 /* Utils */,
 				3CF1F89F2584F48300A1980A /* ListStargazersRequestTests.swift */,
 				3C075A0825891E6900A24714 /* StargazerListViewModelTests.swift */,
 				3CF1F8A12584F48300A1980A /* Info.plist */,
@@ -381,6 +391,9 @@
 				3CF1F89D2584F48300A1980A /* PBXTargetDependency */,
 			);
 			name = StargazersTests;
+			packageProductDependencies = (
+				3C53B4EE258960FB00198F91 /* CombineExpectations */,
+			);
 			productName = StargazersTests;
 			productReference = 3CF1F89B2584F48300A1980A /* StargazersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -432,12 +445,14 @@
 			knownRegions = (
 				en,
 				it,
+				Base,
 			);
 			mainGroup = 3CF1F8812584F48200A1980A;
 			packageReferences = (
 				3CF1F95D258515C100A1980A /* XCRemoteSwiftPackageReference "Swinject" */,
 				3CF1F98F25851EDA00A1980A /* XCRemoteSwiftPackageReference "Alamofire" */,
 				3C48ABC625865694004A3FFD /* XCRemoteSwiftPackageReference "FetchImage" */,
+				3C53B4ED258960FB00198F91 /* XCRemoteSwiftPackageReference "CombineExpectations" */,
 			);
 			productRefGroup = 3CF1F88B2584F48200A1980A /* Products */;
 			projectDirPath = "";
@@ -873,6 +888,14 @@
 				version = 0.2.1;
 			};
 		};
+		3C53B4ED258960FB00198F91 /* XCRemoteSwiftPackageReference "CombineExpectations" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/CombineExpectations.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.5.0;
+			};
+		};
 		3CF1F95D258515C100A1980A /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
@@ -896,6 +919,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3C48ABC625865694004A3FFD /* XCRemoteSwiftPackageReference "FetchImage" */;
 			productName = FetchImage;
+		};
+		3C53B4EE258960FB00198F91 /* CombineExpectations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C53B4ED258960FB00198F91 /* XCRemoteSwiftPackageReference "CombineExpectations" */;
+			productName = CombineExpectations;
 		};
 		3CF1F95E258515C100A1980A /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
