@@ -12,18 +12,14 @@ protocol ApiRequest: URLRequestCompatible {
     
     associatedtype Response: Decodable
     
-    var baseURL: URL { get }
-    var path: String { get }
     var method: ApiMethod { get }
     var headers: [String: String] { get }
-    var queryItems: [String: String] { get }
+    var urlComponents: URLComponents? { get }
 }
 
 extension ApiRequest {
     
     var headers: [String: String] { [:] }
-    
-    var queryItems: [String: String] { [:] }
 }
 
 // MARK: - URLRequestCompatible
@@ -31,12 +27,9 @@ extension ApiRequest {
     
     func toURLRequest() throws -> URLRequest {
         
-        guard var urlComponents = URLComponents(url: self.baseURL, resolvingAgainstBaseURL: false) else {
+        guard let urlComponents = self.urlComponents else {
             throw ApiRequestError.invalidURLComponents
         }
-        
-        urlComponents.path = self.path
-        urlComponents.queryItems = self.queryItems.map { URLQueryItem(name: $0.key, value: $0.value) }
         
         let url = try urlComponents.asURL()
         var urlRequest = URLRequest(url: url)

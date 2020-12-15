@@ -19,8 +19,16 @@ extension ListStargazersRequest: ApiRequest {
     
     typealias Response = [ListStargazersResponseItem]
     
-    var path: String {
-        "/repos/\(self.repo.owner)/\(self.repo.name)/stargazers"
+    var urlComponents: URLComponents? {
+        
+        guard var urlComponents = URLComponents(url: self.baseURL, resolvingAgainstBaseURL: false) else {
+            return nil
+        }
+        
+        urlComponents.path = "/repos/\(self.repo.owner)/\(self.repo.name)/stargazers"
+        urlComponents.queryItems = self.queryItems
+        
+        return urlComponents
     }
     
     var method: ApiMethod { .get }
@@ -30,10 +38,13 @@ extension ListStargazersRequest: ApiRequest {
             "Accept": "application/json; application/vnd.github.v3.star+json"
         ]
     }
+}
     
-    var queryItems: [String: String] {
+private extension ListStargazersRequest {
+    
+    var queryItems: [URLQueryItem] {
         [
-            "page": String(self.page)
+            URLQueryItem(name: "page", value: String(self.page))
         ]
     }
 }
