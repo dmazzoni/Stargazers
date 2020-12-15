@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C075A0125891D3900A24714 /* MockGitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C075A0025891D3900A24714 /* MockGitHubRepository.swift */; };
+		3C075A0925891E6900A24714 /* StargazerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C075A0825891E6900A24714 /* StargazerListViewModelTests.swift */; };
 		3C3B340A2587514100EE2154 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B34092587514000EE2154 /* Repo.swift */; };
 		3C3B35352587D85900EE2154 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B35342587D85900EE2154 /* AccessibilityIdentifiers.swift */; };
 		3C3B35362587D85900EE2154 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B35342587D85900EE2154 /* AccessibilityIdentifiers.swift */; };
@@ -60,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C075A0025891D3900A24714 /* MockGitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGitHubRepository.swift; sourceTree = "<group>"; };
+		3C075A0825891E6900A24714 /* StargazerListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerListViewModelTests.swift; sourceTree = "<group>"; };
 		3C3B34092587514000EE2154 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		3C3B35342587D85900EE2154 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		3C3B35582587DFA700EE2154 /* RepositoryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryFormView.swift; sourceTree = "<group>"; };
@@ -126,6 +130,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C0759FF25891D2D00A24714 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3C075A0025891D3900A24714 /* MockGitHubRepository.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		3C3B35332587D83900EE2154 /* Accessibility */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +237,9 @@
 		3CF1F89E2584F48300A1980A /* StargazersTests */ = {
 			isa = PBXGroup;
 			children = (
+				3C0759FF25891D2D00A24714 /* Mocks */,
 				3CF1F89F2584F48300A1980A /* ListStargazersRequestTests.swift */,
+				3C075A0825891E6900A24714 /* StargazerListViewModelTests.swift */,
 				3CF1F8A12584F48300A1980A /* Info.plist */,
 			);
 			path = StargazersTests;
@@ -520,6 +534,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C075A0925891E6900A24714 /* StargazerListViewModelTests.swift in Sources */,
+				3C075A0125891D3900A24714 /* MockGitHubRepository.swift in Sources */,
 				3CF1F8A02584F48300A1980A /* ListStargazersRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

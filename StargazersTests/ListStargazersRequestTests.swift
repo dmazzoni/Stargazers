@@ -6,9 +6,11 @@
 //
 
 import XCTest
+
 @testable import Stargazers
 
-class ListStargazersRequestTests: XCTestCase {
+// MARK: - ListStargazersRequestTests
+final class ListStargazersRequestTests: XCTestCase {
     
     private var repo: Repo!
     

@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Repo
-struct Repo {
+struct Repo: Equatable {
     
     var owner: String = ""
     var name: String = ""
