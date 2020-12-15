@@ -21,14 +21,13 @@ final class StargazerListViewModel: ObservableObject {
     @Published var showListPlaceholder: Bool = false
     @Published var errorModel: SimpleErrorModel?
     
-    private lazy var gitHubRepository: GitHubRepository = {
-        Injector.shared.resolve(GitHubRepository.self)
-    }()
+    private let gitHubRepository: GitHubRepository
     
     private var currentPage: Int = 1
     private var cancelBag = Set<AnyCancellable>()
     
-    init() {
+    init(gitHubRepository: GitHubRepository) {
+        self.gitHubRepository = gitHubRepository
         self.setupBindings()
     }
 }

@@ -41,5 +41,10 @@ private extension Injector {
         self.container.register(GitHubRepository.self) { _ in
             RemoteGitHubRepository()
         }
+        
+        self.container.register(StargazerListViewModel.self) { resolver in
+            let repository = resolver.resolve(GitHubRepository.self)!
+            return StargazerListViewModel(gitHubRepository: repository)
+        }
     }
 }

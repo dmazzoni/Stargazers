@@ -65,6 +65,8 @@ private extension StargazerListView {
 struct StargazerListView_Previews: PreviewProvider {
     
     static var previews: some View {
-        StargazerListView(viewModel: .init())
+        StargazerListView(
+            viewModel: Injector.shared.resolve(StargazerListViewModel.self)
+        )
     }
 }

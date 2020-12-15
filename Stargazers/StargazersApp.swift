@@ -11,7 +11,9 @@ import SwiftUI
 struct StargazersApp: App {
     var body: some Scene {
         WindowGroup {
-            StargazerListView(viewModel: .init())
+            StargazerListView(
+                viewModel: Injector.shared.resolve(StargazerListViewModel.self)
+            )
         }
     }
 }
