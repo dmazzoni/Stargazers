@@ -52,7 +52,7 @@ private extension StargazerListView {
     
     var loginButton: some View {
         
-        Button(viewModel.loginButtonTitle) {
+        Button(LocalizedStringKey(viewModel.loginButtonTitle)) {
             self.hideKeyboard()
             self.viewModel.didTapLoginButton()
         }
