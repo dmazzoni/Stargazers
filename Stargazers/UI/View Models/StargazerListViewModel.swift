@@ -20,7 +20,6 @@ final class StargazerListViewModel: ObservableObject {
     @Published var isSearchDisabled: Bool = false
     @Published var isLoginDisabled: Bool = false
     @Published var isLoading: Bool = false
-    @Published var isAuthenticating: Bool = false
     @Published var showListPlaceholder: Bool = false
     @Published var errorModel: SimpleErrorModel?
     
@@ -71,15 +70,11 @@ private extension StargazerListViewModel {
     
     func setupBindings() {
         
-        $repo.combineLatest($isLoading, $isAuthenticating)
-            .map { repo, isLoading, isAuthenticating in
-                repo.name.isEmpty || repo.owner.isEmpty || isLoading || isAuthenticating
+        $repo.combineLatest($isLoading)
+            .map { repo, isLoading in
+                repo.name.isEmpty || repo.owner.isEmpty || isLoading
             }
             .assign(to: \.isSearchDisabled, on: self)
-            .store(in: &self.cancelBag)
-        
-        $isAuthenticating
-            .assign(to: \.isLoginDisabled, on: self)
             .store(in: &self.cancelBag)
     }
     
@@ -95,6 +90,7 @@ private extension StargazerListViewModel {
             page: self.currentPage
         )
         
+        self.errorModel = nil
         self.gitHubRepository.fetchStargazers(request: request)
         .sink { [weak self] completion in
             self?.isLoading = false
@@ -112,10 +108,8 @@ private extension StargazerListViewModel {
     
     func didRequestLogin() {
         
-        self.isAuthenticating = true
         self.oauthRepository.login()
             .sink { [weak self] completion in
-                self?.isAuthenticating = false
                 self?.updateLoginButtonTitle()
                 if case let .failure(error) = completion {
                     
@@ -126,9 +120,7 @@ private extension StargazerListViewModel {
                         self?.errorModel = SimpleErrorModel(message: error.localizedDescription)
                     }
                 }
-            } receiveValue: { [weak self] _ in
-                self?.isAuthenticating = false
-            }
+            } receiveValue: { _ in }
             .store(in: &cancelBag)
     }
     
