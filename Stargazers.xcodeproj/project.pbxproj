@@ -199,13 +199,6 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
-		3C53B4E925895CC800198F91 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		3CF1F8812584F48200A1980A = {
 			isa = PBXGroup;
 			children = (
@@ -247,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				3C0759FF25891D2D00A24714 /* Mocks */,
-				3C53B4E925895CC800198F91 /* Utils */,
 				3CF1F89F2584F48300A1980A /* ListStargazersRequestTests.swift */,
 				3C075A0825891E6900A24714 /* StargazerListViewModelTests.swift */,
 				3CF1F8A12584F48300A1980A /* Info.plist */,
