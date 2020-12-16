@@ -16,7 +16,7 @@
 		3C0C7B0F258A7C17001501D1 /* OAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B0E258A7C17001501D1 /* OAuthRequest.swift */; };
 		3C0C7B17258A7EFB001501D1 /* ASOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B16258A7EFB001501D1 /* ASOAuthRepository.swift */; };
 		3C0C7B23258A8597001501D1 /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B22258A8597001501D1 /* OAuthToken.swift */; };
-		3C0C7B2B258A8935001501D1 /* AlamofireRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B2A258A8935001501D1 /* AlamofireRequestAdapter.swift */; };
+		3C0C7B2B258A8935001501D1 /* AlamofireRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B2A258A8935001501D1 /* AlamofireRequestInterceptor.swift */; };
 		3C0C7B3D258A8CDB001501D1 /* InMemoryTokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B3C258A8CDB001501D1 /* InMemoryTokenStorage.swift */; };
 		3C0C7B42258AA2BF001501D1 /* MockOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B41258AA2BF001501D1 /* MockOAuthRepository.swift */; };
 		3C3B340A2587514100EE2154 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B34092587514000EE2154 /* Repo.swift */; };
@@ -82,7 +82,7 @@
 		3C0C7B0E258A7C17001501D1 /* OAuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthRequest.swift; sourceTree = "<group>"; };
 		3C0C7B16258A7EFB001501D1 /* ASOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASOAuthRepository.swift; sourceTree = "<group>"; };
 		3C0C7B22258A8597001501D1 /* OAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
-		3C0C7B2A258A8935001501D1 /* AlamofireRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequestAdapter.swift; sourceTree = "<group>"; };
+		3C0C7B2A258A8935001501D1 /* AlamofireRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequestInterceptor.swift; sourceTree = "<group>"; };
 		3C0C7B3C258A8CDB001501D1 /* InMemoryTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryTokenStorage.swift; sourceTree = "<group>"; };
 		3C0C7B41258AA2BF001501D1 /* MockOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOAuthRepository.swift; sourceTree = "<group>"; };
 		3C3B34092587514000EE2154 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
@@ -399,7 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				3CF1F98725851E9000A1980A /* AlamofireApiClient.swift */,
-				3C0C7B2A258A8935001501D1 /* AlamofireRequestAdapter.swift */,
+				3C0C7B2A258A8935001501D1 /* AlamofireRequestInterceptor.swift */,
 				3C0C7B3C258A8CDB001501D1 /* InMemoryTokenStorage.swift */,
 			);
 			path = Implementation;
@@ -591,7 +591,7 @@
 				3C3B340A2587514100EE2154 /* Repo.swift in Sources */,
 				3C0C7AFA258A796B001501D1 /* AccessTokenRequest.swift in Sources */,
 				3C4B9414258600E6001653F3 /* InfiniteList.swift in Sources */,
-				3C0C7B2B258A8935001501D1 /* AlamofireRequestAdapter.swift in Sources */,
+				3C0C7B2B258A8935001501D1 /* AlamofireRequestInterceptor.swift in Sources */,
 				3CF1F98825851E9000A1980A /* AlamofireApiClient.swift in Sources */,
 				3C48ABEE25867553004A3FFD /* LeftImage.swift in Sources */,
 				3C4B94422586170D001653F3 /* GitHubRequest.swift in Sources */,

@@ -17,7 +17,8 @@ final class AlamofireNetworkClient {
     private let session: Alamofire.Session
     
     init() {
-        self.session = Alamofire.Session()
+        let interceptor = AlamofireRequestInterceptor()
+        self.session = Alamofire.Session(interceptor: interceptor)
         self.jsonDecoder = JSONDecoder()
     }
 }
