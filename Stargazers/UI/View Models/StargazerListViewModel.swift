@@ -64,6 +64,10 @@ private extension StargazerListViewModel {
     
     func loadNextPage() {
         
+        guard !self.isLoading else {
+            return
+        }
+        
         self.isLoading = true
         let request = ListStargazersRequest(
             repo: self.repo,
