@@ -18,7 +18,7 @@ struct StargazerListView: View {
                 Spacer()
                 loginButton
             }
-            .padding(.horizontal)
+            .padding([.horizontal, .top])
             RepositoryFormView(repo: $viewModel.repo)
             searchButton
             Divider()
