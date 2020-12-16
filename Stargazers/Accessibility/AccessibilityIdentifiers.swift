@@ -15,5 +15,6 @@ enum RepositoryFormAxIdentifiers: String {
 
 // MARK: - Stargazer List
 enum StargazerListAxIdentifiers: String {
+    case loginButton
     case searchButton
 }

@@ -16,18 +16,26 @@ final class StargazerListViewModel: ObservableObject {
     
     // ViewModel -> View
     @Published var stargazers: [Stargazer] = []
+    @Published var loginButtonTitle: String = "Login"
     @Published var isSearchDisabled: Bool = false
+    @Published var isLoginDisabled: Bool = false
     @Published var isLoading: Bool = false
+    @Published var isAuthenticating: Bool = false
     @Published var showListPlaceholder: Bool = false
     @Published var errorModel: SimpleErrorModel?
     
     private let gitHubRepository: GitHubRepository
+    private let oauthRepository: OAuthRepository
     
     private var currentPage: Int = 1
     private var cancelBag = Set<AnyCancellable>()
     
-    init(gitHubRepository: GitHubRepository) {
+    init(
+        gitHubRepository: GitHubRepository,
+        oauthRepository: OAuthRepository
+    ) {
         self.gitHubRepository = gitHubRepository
+        self.oauthRepository = oauthRepository
         self.setupBindings()
     }
 }
@@ -47,6 +55,15 @@ extension StargazerListViewModel {
     func didRequestNextPage() {
         self.loadNextPage()
     }
+    
+    func didTapLoginButton() {
+        
+        if self.oauthRepository.isLoggedIn {
+            self.didRequestLogout()
+        } else {
+            self.didRequestLogin()
+        }
+    }
 }
 
 // MARK: - Private
@@ -54,11 +71,15 @@ private extension StargazerListViewModel {
     
     func setupBindings() {
         
-        $repo.combineLatest($isLoading)
-            .map { repo, isLoading in
-                repo.name.isEmpty || repo.owner.isEmpty || isLoading
+        $repo.combineLatest($isLoading, $isAuthenticating)
+            .map { repo, isLoading, isAuthenticating in
+                repo.name.isEmpty || repo.owner.isEmpty || isLoading || isAuthenticating
             }
             .assign(to: \.isSearchDisabled, on: self)
+            .store(in: &self.cancelBag)
+        
+        $isAuthenticating
+            .assign(to: \.isLoginDisabled, on: self)
             .store(in: &self.cancelBag)
     }
     
@@ -87,5 +108,44 @@ private extension StargazerListViewModel {
             self?.showListPlaceholder = (self?.stargazers.isEmpty ?? true)
         }
         .store(in: &self.cancelBag)
+    }
+    
+    func didRequestLogin() {
+        
+        self.isAuthenticating = true
+        self.oauthRepository.login()
+            .sink { [weak self] completion in
+                self?.isAuthenticating = false
+                self?.updateLoginButtonTitle()
+                if case let .failure(error) = completion {
+                    
+                    switch error {
+                    case .cancelled:
+                        break
+                    default:
+                        self?.errorModel = SimpleErrorModel(message: error.localizedDescription)
+                    }
+                }
+            } receiveValue: { [weak self] _ in
+                self?.isAuthenticating = false
+            }
+            .store(in: &cancelBag)
+    }
+    
+    func didRequestLogout() {
+        self.oauthRepository.logout()
+        self.updateLoginButtonTitle()
+    }
+    
+    func updateLoginButtonTitle() {
+        
+        let title: String
+        if self.oauthRepository.isLoggedIn {
+            title = "Logout"
+        } else {
+            title = "Login"
+        }
+        
+        self.loginButtonTitle = title
     }
 }

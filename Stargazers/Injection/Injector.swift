@@ -34,19 +34,40 @@ private extension Injector {
     
     func setupContainer() {
         
-        // swiftlint:disable force_unwrapping
         self.container.register(ApiClient.self) { _ in
             AlamofireNetworkClient()
         }
+        
+        self.container.register(ApiAuthorizationProvider.self) { _ in
+            InMemoryTokenStorage()
+        }
+        .inObjectScope(.container)
         
         self.container.register(GitHubRepository.self) { _ in
             RemoteGitHubRepository()
         }
         
-        self.container.register(StargazerListViewModel.self) { resolver in
-            let repository = resolver.resolve(GitHubRepository.self)!
-            return StargazerListViewModel(gitHubRepository: repository)
+        self.container.register(OAuthRepository.self) { _ in
+            ASOAuthRepository()
         }
-        // swiftlint:enable force_unwrapping
+        
+        self.container.register(OAuthConfiguration.self) { _ in
+            OAuthConfiguration(
+                clientId: "931f93c018859d09a4ee",
+                clientSecret: "fc0840b208509b552ada91218f6d1309dda224a0",
+                callbackScheme: "dmazzoni",
+                callbackUrl: "dmazzoni://oauth-callback/"
+            )
+        }
+        .inObjectScope(.container)
+        
+        self.container.register(StargazerListViewModel.self) { resolver in
+            // swiftlint:disable force_unwrapping
+            StargazerListViewModel(
+                gitHubRepository: resolver.resolve(GitHubRepository.self)!,
+                oauthRepository: resolver.resolve(OAuthRepository.self)!
+            )
+            // swiftlint:enable force_unwrapping
+        }
     }
 }

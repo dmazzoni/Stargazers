@@ -20,7 +20,10 @@ final class StargazerListViewModelTests: XCTestCase {
     override func setUp() {
         let mockRepository = MockGitHubRepository()
         self.gitHubRepository = mockRepository
-        self.viewModel = StargazerListViewModel(gitHubRepository: mockRepository)
+        self.viewModel = StargazerListViewModel(
+            gitHubRepository: mockRepository,
+            oauthRepository: MockOAuthRepository()
+        )
     }
     
     func testListIsInitiallyEmpty() {

@@ -14,6 +14,11 @@ struct StargazerListView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Spacer()
+                loginButton
+            }
+            .padding(.horizontal)
             RepositoryFormView(repo: $viewModel.repo)
             searchButton
             Divider()
@@ -43,6 +48,16 @@ private extension StargazerListView {
         }
         .disabled(viewModel.isSearchDisabled)
         .accessibility(identifier: StargazerListAxIdentifiers.searchButton.rawValue)
+    }
+    
+    var loginButton: some View {
+        
+        Button(viewModel.loginButtonTitle) {
+            self.hideKeyboard()
+            self.viewModel.didTapLoginButton()
+        }
+        .disabled(viewModel.isLoginDisabled)
+        .accessibility(identifier: StargazerListAxIdentifiers.loginButton.rawValue)
     }
     
     var listView: some View {

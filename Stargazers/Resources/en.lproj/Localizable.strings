@@ -11,3 +11,6 @@
 "Search" = "Search";
 "Error" = "Error";
 "EmptyList" = "This repository has no stargazers";
+
+"Login" = "Login";
+"Logout" = "Logout";

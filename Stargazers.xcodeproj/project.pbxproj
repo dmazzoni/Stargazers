@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		3C075A0125891D3900A24714 /* MockGitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C075A0025891D3900A24714 /* MockGitHubRepository.swift */; };
 		3C075A0925891E6900A24714 /* StargazerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C075A0825891E6900A24714 /* StargazerListViewModelTests.swift */; };
+		3C0C7AF1258A7276001501D1 /* OAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7AF0258A7276001501D1 /* OAuthRepository.swift */; };
+		3C0C7AFA258A796B001501D1 /* AccessTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7AF9258A796B001501D1 /* AccessTokenRequest.swift */; };
+		3C0C7B02258A7A3B001501D1 /* OAuthConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B01258A7A3B001501D1 /* OAuthConfiguration.swift */; };
+		3C0C7B0A258A7B41001501D1 /* AuthorizationCodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B09258A7B41001501D1 /* AuthorizationCodeRequest.swift */; };
+		3C0C7B0F258A7C17001501D1 /* OAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B0E258A7C17001501D1 /* OAuthRequest.swift */; };
+		3C0C7B17258A7EFB001501D1 /* ASOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B16258A7EFB001501D1 /* ASOAuthRepository.swift */; };
+		3C0C7B23258A8597001501D1 /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B22258A8597001501D1 /* OAuthToken.swift */; };
+		3C0C7B2B258A8935001501D1 /* AlamofireRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B2A258A8935001501D1 /* AlamofireRequestAdapter.swift */; };
+		3C0C7B3D258A8CDB001501D1 /* InMemoryTokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B3C258A8CDB001501D1 /* InMemoryTokenStorage.swift */; };
+		3C0C7B42258AA2BF001501D1 /* MockOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C7B41258AA2BF001501D1 /* MockOAuthRepository.swift */; };
 		3C3B340A2587514100EE2154 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B34092587514000EE2154 /* Repo.swift */; };
 		3C3B35352587D85900EE2154 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B35342587D85900EE2154 /* AccessibilityIdentifiers.swift */; };
 		3C3B35362587D85900EE2154 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B35342587D85900EE2154 /* AccessibilityIdentifiers.swift */; };
@@ -65,6 +75,16 @@
 /* Begin PBXFileReference section */
 		3C075A0025891D3900A24714 /* MockGitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGitHubRepository.swift; sourceTree = "<group>"; };
 		3C075A0825891E6900A24714 /* StargazerListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerListViewModelTests.swift; sourceTree = "<group>"; };
+		3C0C7AF0258A7276001501D1 /* OAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthRepository.swift; sourceTree = "<group>"; };
+		3C0C7AF9258A796B001501D1 /* AccessTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenRequest.swift; sourceTree = "<group>"; };
+		3C0C7B01258A7A3B001501D1 /* OAuthConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthConfiguration.swift; sourceTree = "<group>"; };
+		3C0C7B09258A7B41001501D1 /* AuthorizationCodeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCodeRequest.swift; sourceTree = "<group>"; };
+		3C0C7B0E258A7C17001501D1 /* OAuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthRequest.swift; sourceTree = "<group>"; };
+		3C0C7B16258A7EFB001501D1 /* ASOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASOAuthRepository.swift; sourceTree = "<group>"; };
+		3C0C7B22258A8597001501D1 /* OAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
+		3C0C7B2A258A8935001501D1 /* AlamofireRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequestAdapter.swift; sourceTree = "<group>"; };
+		3C0C7B3C258A8CDB001501D1 /* InMemoryTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryTokenStorage.swift; sourceTree = "<group>"; };
+		3C0C7B41258AA2BF001501D1 /* MockOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOAuthRepository.swift; sourceTree = "<group>"; };
 		3C3B34092587514000EE2154 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		3C3B35342587D85900EE2154 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		3C3B35582587DFA700EE2154 /* RepositoryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryFormView.swift; sourceTree = "<group>"; };
@@ -136,8 +156,46 @@
 			isa = PBXGroup;
 			children = (
 				3C075A0025891D3900A24714 /* MockGitHubRepository.swift */,
+				3C0C7B41258AA2BF001501D1 /* MockOAuthRepository.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3C0C7AEF258A7265001501D1 /* OAuthRepository */ = {
+			isa = PBXGroup;
+			children = (
+				3C0C7AF0258A7276001501D1 /* OAuthRepository.swift */,
+				3C0C7B0E258A7C17001501D1 /* OAuthRequest.swift */,
+				3C0C7B1B258A7F07001501D1 /* Implementation */,
+				3C0C7AF8258A7954001501D1 /* Requests */,
+			);
+			path = OAuthRepository;
+			sourceTree = "<group>";
+		};
+		3C0C7AF8258A7954001501D1 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3C0C7AF9258A796B001501D1 /* AccessTokenRequest.swift */,
+				3C0C7B09258A7B41001501D1 /* AuthorizationCodeRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3C0C7B1B258A7F07001501D1 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				3C0C7B16258A7EFB001501D1 /* ASOAuthRepository.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		3C0C7B30258A8A56001501D1 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				3C0C7B01258A7A3B001501D1 /* OAuthConfiguration.swift */,
+				3C0C7B22258A8597001501D1 /* OAuthToken.swift */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 		3C3B35332587D83900EE2154 /* Accessibility */ = {
@@ -177,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				3C4B943025861598001653F3 /* GitHubRepository */,
+				3C0C7AEF258A7265001501D1 /* OAuthRepository */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -308,6 +367,7 @@
 		3CF1F92F258508EA00A1980A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C0C7B30258A8A56001501D1 /* OAuth */,
 				3C3B34092587514000EE2154 /* Repo.swift */,
 				3CF1F9A42585271200A1980A /* Stargazer.swift */,
 				3CF1F9302585091000A1980A /* User.swift */,
@@ -339,6 +399,8 @@
 			isa = PBXGroup;
 			children = (
 				3CF1F98725851E9000A1980A /* AlamofireApiClient.swift */,
+				3C0C7B2A258A8935001501D1 /* AlamofireRequestAdapter.swift */,
+				3C0C7B3C258A8CDB001501D1 /* InMemoryTokenStorage.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -510,10 +572,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C0C7B23258A8597001501D1 /* OAuthToken.swift in Sources */,
+				3C0C7AF1258A7276001501D1 /* OAuthRepository.swift in Sources */,
 				3CF1F8902584F48200A1980A /* StargazerListView.swift in Sources */,
+				3C0C7B0A258A7B41001501D1 /* AuthorizationCodeRequest.swift in Sources */,
 				3C48ABCD258656AB004A3FFD /* RemoteImage.swift in Sources */,
 				3C48ABDA25866FA2004A3FFD /* SimpleErrorModel.swift in Sources */,
+				3C0C7B3D258A8CDB001501D1 /* InMemoryTokenStorage.swift in Sources */,
 				3CF1F88E2584F48200A1980A /* StargazersApp.swift in Sources */,
+				3C0C7B02258A7A3B001501D1 /* OAuthConfiguration.swift in Sources */,
 				3CF1F9282585071F00A1980A /* StargazerListViewModel.swift in Sources */,
 				3CF1F94C25850E5F00A1980A /* URLRequestCompatible.swift in Sources */,
 				3CF1F9312585091000A1980A /* User.swift in Sources */,
@@ -522,7 +589,9 @@
 				3CF1F91A2585029500A1980A /* FormTextField.swift in Sources */,
 				3C4B941A25861073001653F3 /* StargazerRow.swift in Sources */,
 				3C3B340A2587514100EE2154 /* Repo.swift in Sources */,
+				3C0C7AFA258A796B001501D1 /* AccessTokenRequest.swift in Sources */,
 				3C4B9414258600E6001653F3 /* InfiniteList.swift in Sources */,
+				3C0C7B2B258A8935001501D1 /* AlamofireRequestAdapter.swift in Sources */,
 				3CF1F98825851E9000A1980A /* AlamofireApiClient.swift in Sources */,
 				3C48ABEE25867553004A3FFD /* LeftImage.swift in Sources */,
 				3C4B94422586170D001653F3 /* GitHubRequest.swift in Sources */,
@@ -530,8 +599,10 @@
 				3CF1F94D25850E5F00A1980A /* ApiRequest.swift in Sources */,
 				3C3B35592587DFA700EE2154 /* RepositoryFormView.swift in Sources */,
 				3C48ABE6258673A2004A3FFD /* ClearButton.swift in Sources */,
+				3C0C7B0F258A7C17001501D1 /* OAuthRequest.swift in Sources */,
 				3CF1F9562585110C00A1980A /* ListStargazersRequest.swift in Sources */,
 				3CF1F94B25850E5F00A1980A /* ApiClient.swift in Sources */,
+				3C0C7B17258A7EFB001501D1 /* ASOAuthRepository.swift in Sources */,
 				3CF1F9A52585271200A1980A /* Stargazer.swift in Sources */,
 				3C4B9426258614BC001653F3 /* GitHubRepository.swift in Sources */,
 			);
@@ -544,6 +615,7 @@
 				3C075A0925891E6900A24714 /* StargazerListViewModelTests.swift in Sources */,
 				3C075A0125891D3900A24714 /* MockGitHubRepository.swift in Sources */,
 				3CF1F8A02584F48300A1980A /* ListStargazersRequestTests.swift in Sources */,
+				3C0C7B42258AA2BF001501D1 /* MockOAuthRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

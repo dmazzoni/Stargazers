@@ -11,3 +11,6 @@
 "Search" = "Cerca";
 "Error" = "Errore";
 "EmptyList" = "Nessuno stargazer presente per questo repository";
+
+"Login" = "Accedi";
+"Logout" = "Esci";

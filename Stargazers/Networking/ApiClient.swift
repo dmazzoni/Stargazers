@@ -15,3 +15,11 @@ protocol ApiClient {
     
     func request<T: ApiRequest>(request: T) -> AnyPublisher<T.Response, Swift.Error>
 }
+
+// MARK: - ApiAuthorizationProvider
+protocol ApiAuthorizationProvider {
+    
+    var authToken: OAuthToken? { get set }
+    
+    var authorizationHeader: String? { get }
+}
